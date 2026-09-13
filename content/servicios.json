@@ -1,0 +1,37 @@
+{
+  "servicios": [
+    {
+      "icono": "scissors",
+      "titulo": "Cortes Modernos y Clásicos",
+      "descripcion": "Degradados y fades de precisión, cortes a tijera, texturizados y peinados a medida. Para caballeros y niños, con el acabado exacto que buscas.",
+      "detalles": [
+        "Degradado / Fade (bajo, medio, alto y skin)",
+        "Corte a tijera y clásico con raya",
+        "Texturizados y estilismo con producto",
+        "Corte infantil con paciencia y mimo"
+      ]
+    },
+    {
+      "icono": "razor",
+      "titulo": "Cuidado y Arreglo de Barba",
+      "descripcion": "El auténtico ritual de barbería: perfilado con navaja, toalla caliente e hidratación con aceites esenciales para una barba definida y saludable.",
+      "detalles": [
+        "Perfilado y apurado con navaja",
+        "Ritual de toalla caliente",
+        "Hidratación con aceites esenciales",
+        "Diseño y arquitectura de barba"
+      ]
+    },
+    {
+      "icono": "sparkles",
+      "titulo": "Tratamientos y Estilismo Completo",
+      "descripcion": "Color, tratamiento y cuidado profundo. Tintes, mechas balayage y keratina, con un lavado y masaje capilar que relaja de verdad.",
+      "detalles": [
+        "Tintes y coloración masculina/femenina",
+        "Mechas y balayage",
+        "Tratamiento de keratina y alisado",
+        "Lavado con masaje capilar"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,15 @@
+{
+  "resumen": {
+    "valoracion": "4.6",
+    "num_resenas": "191",
+    "texto": "Cientos de clientes de Alcobendas confían en nosotros. Puntualidad, buen ambiente y maestría con la navaja y la tijera."
+  },
+  "opiniones": [
+    { "nombre": "Javier M.", "zona": "Alcobendas", "estrellas": 5, "texto": "El mejor degradado que me han hecho en Alcobendas. Puntuales y muy profesionales. Salgo encantado cada vez." },
+    { "nombre": "Daniel R.", "zona": "La Moraleja", "estrellas": 5, "texto": "El arreglo de barba con toalla caliente es otro nivel. Se nota la maestría con la navaja. Repetiré seguro." },
+    { "nombre": "Sergio P.", "zona": "Alcobendas", "estrellas": 4, "texto": "Muy buen trato y ambiente de barbería de toda la vida pero con estilo moderno. Cortan de lujo." },
+    { "nombre": "Laura G.", "zona": "San Sebastián de los Reyes", "estrellas": 5, "texto": "Me hicieron unas mechas balayage preciosas y el masaje capilar del lavado es una maravilla. Muy recomendable." },
+    { "nombre": "Andrés V.", "zona": "Alcobendas", "estrellas": 5, "texto": "Llevo años viniendo. Precisión con la tijera y siempre respetan la cita. Trato cercano y honesto." },
+    { "nombre": "Marta L.", "zona": "Alcobendas", "estrellas": 4, "texto": "Buen corte de caballero para mi hijo, con mucha paciencia con los niños. El local está limpio y cuidado." }
+  ]
+}

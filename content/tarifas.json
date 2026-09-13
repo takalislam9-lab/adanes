@@ -1,0 +1,19 @@
+{
+  "nota": "Precios orientativos. Consúltanos para tratamientos personalizados de color y keratina según el largo del cabello.",
+  "barberia": [
+    { "nombre": "Corte de caballero", "descripcion": "Corte a máquina y/o tijera con acabado.", "precio": "12 €", "destacado": false },
+    { "nombre": "Corte + Barba", "descripcion": "Corte completo con arreglo y perfilado de barba.", "precio": "18 €", "destacado": true },
+    { "nombre": "Degradado / Fade", "descripcion": "Degradado de precisión a tu gusto.", "precio": "13 €", "destacado": false },
+    { "nombre": "Arreglo de barba", "descripcion": "Perfilado con navaja, toalla caliente y aceites.", "precio": "8 €", "destacado": false },
+    { "nombre": "Afeitado clásico a navaja", "descripcion": "Ritual completo de barbería tradicional.", "precio": "10 €", "destacado": false },
+    { "nombre": "Corte infantil (hasta 10 años)", "descripcion": "Corte adaptado a los más pequeños.", "precio": "10 €", "destacado": false }
+  ],
+  "peluqueria": [
+    { "nombre": "Corte de señora", "descripcion": "Lavado, corte y peinado.", "precio": "15 €", "destacado": false },
+    { "nombre": "Lavar y peinar", "descripcion": "Lavado con masaje capilar y peinado.", "precio": "12 €", "destacado": false },
+    { "nombre": "Tinte / Color", "descripcion": "Coloración con acabado (según largo).", "precio": "desde 25 €", "destacado": true },
+    { "nombre": "Mechas / Balayage", "descripcion": "Técnica de color a medida (según largo).", "precio": "desde 40 €", "destacado": false },
+    { "nombre": "Tratamiento de keratina", "descripcion": "Alisado y nutrición profunda (según largo).", "precio": "desde 45 €", "destacado": false },
+    { "nombre": "Recogido / Peinado evento", "descripcion": "Peinado para ocasiones especiales.", "precio": "desde 20 €", "destacado": false }
+  ]
+}

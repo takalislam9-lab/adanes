@@ -1,0 +1,14 @@
+# Dependencias / sistema
+node_modules/
+.DS_Store
+Thumbs.db
+
+# Entornos
+.env
+.env.*
+
+# Logs
+*.log
+
+# Netlify
+.netlify/

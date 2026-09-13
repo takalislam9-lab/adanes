@@ -1,0 +1,12 @@
+{
+  "aviso": "Se recomienda reservar cita previa para garantizar atención personalizada.",
+  "dias": [
+    { "dia": "Lunes", "horas": "09:30 – 14:00 · 16:00 – 21:00", "cerrado": false },
+    { "dia": "Martes", "horas": "09:30 – 14:00 · 16:00 – 21:00", "cerrado": false },
+    { "dia": "Miércoles", "horas": "09:30 – 14:00 · 16:00 – 21:00", "cerrado": false },
+    { "dia": "Jueves", "horas": "09:30 – 14:00 · 16:00 – 21:00", "cerrado": false },
+    { "dia": "Viernes", "horas": "09:30 – 14:00 · 16:00 – 21:00", "cerrado": false },
+    { "dia": "Sábado", "horas": "09:30 – 21:00", "cerrado": false },
+    { "dia": "Domingo", "horas": "09:30 – 14:00 · 16:00 – 21:00", "cerrado": false }
+  ]
+}

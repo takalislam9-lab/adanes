@@ -1,0 +1,6 @@
+# Peluquería y Barbería Adanes — Alcobendas
+User-agent: *
+Allow: /
+Disallow: /admin/
+
+Sitemap: https://adanespeluqueros.es/sitemap.xml
