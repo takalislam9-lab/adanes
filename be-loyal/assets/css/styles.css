@@ -1,0 +1,130 @@
+/* ============================================================
+   Adanes · Peluquería y Barbería — estilos personalizados
+   (complementa a Tailwind CSS)
+   ============================================================ */
+
+:root {
+  --gold: #c8a24a;
+  --gold-soft: #e6c878;
+  --ink: #0e0e10;
+  --ink-2: #17171b;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
+}
+
+body {
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  background-color: var(--ink);
+  color: #e8e8ea;
+  -webkit-font-smoothing: antialiased;
+}
+
+.font-display {
+  font-family: "Oswald", "Inter", sans-serif;
+  letter-spacing: 0.02em;
+}
+
+/* Franja de barbero (barber pole) decorativa */
+.barber-stripe {
+  background: repeating-linear-gradient(
+    45deg,
+    var(--gold) 0,
+    var(--gold) 12px,
+    #1c1c22 12px,
+    #1c1c22 24px
+  );
+}
+
+/* Overlay del hero */
+.hero-overlay {
+  background:
+    linear-gradient(180deg, rgba(10, 10, 12, 0.55) 0%, rgba(10, 10, 12, 0.82) 65%, var(--ink) 100%),
+    radial-gradient(1200px 600px at 70% 10%, rgba(200, 162, 74, 0.18), transparent 60%);
+}
+
+/* Enlace de navegación con subrayado dorado animado */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: width 0.28s ease;
+}
+.nav-link:hover::after,
+.nav-link.active::after {
+  width: 100%;
+}
+
+/* Tarjetas con brillo al pasar el ratón */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  border-color: rgba(200, 162, 74, 0.6);
+  box-shadow: 0 20px 45px -20px rgba(200, 162, 74, 0.35);
+}
+
+/* Galería */
+.gallery-item {
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.gallery-item.is-hidden {
+  display: none;
+}
+.gallery-img {
+  transition: transform 0.5s ease;
+}
+.gallery-card:hover .gallery-img {
+  transform: scale(1.08);
+}
+
+/* Botón de filtro activo */
+.filter-btn.active {
+  background-color: var(--gold);
+  color: #12120f;
+  border-color: var(--gold);
+}
+
+/* Aparición al hacer scroll */
+.reveal {
+  opacity: 0;
+  transform: translateY(28px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.reveal.visible {
+  opacity: 1;
+  transform: none;
+}
+
+/* Botón flotante de WhatsApp */
+.whatsapp-float {
+  animation: pulse 2.6s infinite;
+}
+@keyframes pulse {
+  0% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.5); }
+  70% { box-shadow: 0 0 0 16px rgba(37, 211, 102, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(37, 211, 102, 0); }
+}
+
+/* Respeta a quien prefiere menos movimiento */
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  .reveal { opacity: 1; transform: none; transition: none; }
+  .whatsapp-float { animation: none; }
+}
+
+/* Scrollbar sutil */
+::-webkit-scrollbar { width: 10px; }
+::-webkit-scrollbar-track { background: #101014; }
+::-webkit-scrollbar-thumb { background: #2a2a31; border-radius: 6px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }

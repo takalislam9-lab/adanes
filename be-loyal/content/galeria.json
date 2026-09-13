@@ -1,0 +1,13 @@
+{
+  "trabajos": [
+    { "titulo": "Degradado con línea marcada", "categoria": "Cortes", "imagen": "https://images.unsplash.com/photo-1503951914875-452162b0f3f1?auto=format&fit=crop&w=800&q=80" },
+    { "titulo": "Barba a navaja con toalla caliente", "categoria": "Barba", "imagen": "https://images.unsplash.com/photo-1621605815971-fbc98d665033?auto=format&fit=crop&w=800&q=80" },
+    { "titulo": "Corte clásico con acabado", "categoria": "Cortes", "imagen": "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?auto=format&fit=crop&w=800&q=80" },
+    { "titulo": "Perfilado y diseño de barba", "categoria": "Barba", "imagen": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?auto=format&fit=crop&w=800&q=80" },
+    { "titulo": "Color y mechas balayage", "categoria": "Color", "imagen": "https://images.unsplash.com/photo-1522337660859-02fbefca4702?auto=format&fit=crop&w=800&q=80" },
+    { "titulo": "Skin fade de precisión", "categoria": "Cortes", "imagen": "https://images.unsplash.com/photo-1512864084360-c98d5ca91a05?auto=format&fit=crop&w=800&q=80" },
+    { "titulo": "Arquitectura de barba", "categoria": "Barba", "imagen": "https://images.unsplash.com/photo-1517832606299-7ae9b720a186?auto=format&fit=crop&w=800&q=80" },
+    { "titulo": "Tinte y acabado brillante", "categoria": "Color", "imagen": "https://images.unsplash.com/photo-1560066984-138dadb4c035?auto=format&fit=crop&w=800&q=80" },
+    { "titulo": "Texturizado moderno", "categoria": "Cortes", "imagen": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?auto=format&fit=crop&w=800&q=80" }
+  ]
+}

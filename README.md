@@ -1,4 +1,30 @@
-# Peluquería y Barbería Adanes — Sitio web
+# Webs de barberías — Plantilla reutilizable (SEO local + CMS)
+
+Este repositorio contiene **demos de páginas web para barberías/peluquerías de
+Alcobendas**, construidas con la misma plantilla reutilizable para poder
+adaptarla rápido a cada cliente sin empezar de cero.
+
+## Demos incluidas
+
+| Cliente | Carpeta | URL de demo | Reserva |
+|---------|---------|-------------|---------|
+| **Peluquería y Barbería Adanes** | `/` (raíz) | `/` | WhatsApp / teléfono |
+| **Be Loyal Barbería y Peluquería** | `/be-loyal/` | `/be-loyal/` | Booksy / Instagram |
+
+> Para adaptar la plantilla a un **nuevo cliente**: copia la carpeta `be-loyal/`
+> con otro nombre, edita los archivos de `content/*.json` (datos, servicios,
+> tarifas, galería, testimonios, horario) y los textos de SEO en `index.html`
+> (title, description, JSON-LD, dirección y mapa). El diseño y el código no hay
+> que tocarlos.
+
+> ⚠️ **Datos pendientes de confirmar en Be Loyal:** teléfono, horario real y
+> valoración de Google no se pudieron verificar. La reserva apunta a **Booksy**
+> e **Instagram** (canales reales), el horario es de ejemplo y las opiniones son
+> de muestra. Sustituye todo por los datos reales desde el panel `/be-loyal/admin/`.
+
+---
+
+## Peluquería y Barbería Adanes — Sitio web
 
 Sitio web profesional, responsivo y optimizado para **SEO local** de
 **Peluquería y Barbería Adanes** (Calle del Fuego 43, Alcobendas).

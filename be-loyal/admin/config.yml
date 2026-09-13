@@ -1,0 +1,196 @@
+# ============================================================
+#  Decap CMS (Netlify CMS) — Panel de gestión de Be Loyal
+#  Acceso: https://TU-DOMINIO/admin/
+#
+#  Backend recomendado: git-gateway (Netlify Identity).
+#  Al desplegar en Netlify:
+#    1. Site settings > Identity > Enable Identity
+#    2. Identity > Services > Git Gateway > Enable
+#    3. Invita al cliente por email (Identity > Invite users)
+#  Cambia "branch" al nombre de tu rama de producción si no es main.
+# ============================================================
+
+backend:
+  name: git-gateway
+  branch: main
+
+# Descomenta esta línea para editar en local con `npx decap-server`
+# local_backend: true
+
+media_folder: "assets/img/uploads"   # dónde se guardan las fotos subidas
+public_folder: "/assets/img/uploads" # ruta pública de esas fotos
+
+locale: "es"
+
+site_url: "https://beloyalbarber.es"
+display_url: "https://beloyalbarber.es"
+logo_url: "/assets/img/logo.svg"
+
+collections:
+  # ----------------------------------------------------------
+  # 1. DATOS DEL NEGOCIO
+  # ----------------------------------------------------------
+  - name: "config"
+    label: "⚙️ Datos del negocio"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "general"
+        label: "Información general"
+        file: "content/config.json"
+        fields:
+          - { label: "Nombre del negocio", name: "nombre", widget: "string" }
+          - { label: "Eslogan (subtítulo)", name: "eslogan", widget: "string" }
+          - { label: "Texto del Hero", name: "descripcion_hero", widget: "text" }
+          - { label: "Enlace de reserva (Booksy)", name: "reserva_url", widget: "string", hint: "Pega aquí la URL de tu perfil de Booksy" }
+          - { label: "Instagram (URL)", name: "instagram", widget: "string", required: false, hint: "Ej: https://www.instagram.com/beloyal_barbershop/" }
+          - { label: "Instagram (nombre visible)", name: "instagram_handle", widget: "string", required: false, hint: "Ej: @beloyal_barbershop" }
+          - { label: "Teléfono (mostrado)", name: "telefono", widget: "string", required: false }
+          - { label: "Teléfono (para enlace, con +34)", name: "telefono_link", widget: "string", required: false, hint: "Ej: +34600000000 · déjalo vacío si no quieres mostrarlo" }
+          - { label: "WhatsApp (solo números con 34)", name: "whatsapp", widget: "string", required: false, hint: "Ej: 34600000000" }
+          - { label: "Mensaje predefinido de WhatsApp", name: "mensaje_whatsapp", widget: "text", required: false }
+          - { label: "Email de contacto", name: "email", widget: "string", required: false }
+          - { label: "Dirección (calle y número)", name: "direccion", widget: "string" }
+          - { label: "Ciudad / CP", name: "ciudad", widget: "string" }
+
+  # ----------------------------------------------------------
+  # 2. HORARIOS
+  # ----------------------------------------------------------
+  - name: "horario"
+    label: "🕒 Horario"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "horario"
+        label: "Horario semanal"
+        file: "content/horario.json"
+        fields:
+          - { label: "Aviso (cita previa, etc.)", name: "aviso", widget: "string", required: false }
+          - label: "Días"
+            name: "dias"
+            widget: "list"
+            fields:
+              - { label: "Día", name: "dia", widget: "string" }
+              - { label: "Horas", name: "horas", widget: "string", hint: "Ej: 09:30 – 14:00 · 16:00 – 21:00" }
+              - { label: "¿Cerrado?", name: "cerrado", widget: "boolean", default: false }
+
+  # ----------------------------------------------------------
+  # 3. SERVICIOS ESTRELLA (las 3 tarjetas grandes)
+  # ----------------------------------------------------------
+  - name: "servicios"
+    label: "✂️ Servicios destacados"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "servicios"
+        label: "Servicios estrella"
+        file: "content/servicios.json"
+        fields:
+          - label: "Servicios"
+            name: "servicios"
+            widget: "list"
+            fields:
+              - label: "Icono"
+                name: "icono"
+                widget: "select"
+                options: ["scissors", "razor", "sparkles"]
+                default: "scissors"
+              - { label: "Título", name: "titulo", widget: "string" }
+              - { label: "Descripción", name: "descripcion", widget: "text" }
+              - { label: "Detalles (lista)", name: "detalles", widget: "list", field: { label: "Detalle", name: "detalle", widget: "string" } }
+
+  # ----------------------------------------------------------
+  # 4. TARIFAS (precios de barbería y peluquería)
+  # ----------------------------------------------------------
+  - name: "tarifas"
+    label: "💶 Tarifas y precios"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "tarifas"
+        label: "Lista de precios"
+        file: "content/tarifas.json"
+        fields:
+          - { label: "Nota / aclaración", name: "nota", widget: "text", required: false }
+          - label: "Barbería (caballero)"
+            name: "barberia"
+            widget: "list"
+            label_singular: "Servicio de barbería"
+            summary: "{{fields.nombre}} — {{fields.precio}}"
+            fields:
+              - { label: "Nombre", name: "nombre", widget: "string" }
+              - { label: "Descripción", name: "descripcion", widget: "string", required: false }
+              - { label: "Precio", name: "precio", widget: "string", hint: "Ej: 12 € · desde 25 €" }
+              - { label: "¿Destacar?", name: "destacado", widget: "boolean", default: false }
+          - label: "Peluquería / Color"
+            name: "peluqueria"
+            widget: "list"
+            label_singular: "Servicio de peluquería"
+            summary: "{{fields.nombre}} — {{fields.precio}}"
+            fields:
+              - { label: "Nombre", name: "nombre", widget: "string" }
+              - { label: "Descripción", name: "descripcion", widget: "string", required: false }
+              - { label: "Precio", name: "precio", widget: "string", hint: "Ej: desde 40 €" }
+              - { label: "¿Destacar?", name: "destacado", widget: "boolean", default: false }
+
+  # ----------------------------------------------------------
+  # 5. GALERÍA / LOOKBOOK
+  # ----------------------------------------------------------
+  - name: "galeria"
+    label: "📸 Galería / Lookbook"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "galeria"
+        label: "Trabajos del equipo"
+        file: "content/galeria.json"
+        fields:
+          - label: "Trabajos"
+            name: "trabajos"
+            widget: "list"
+            label_singular: "Trabajo"
+            summary: "{{fields.titulo}} ({{fields.categoria}})"
+            fields:
+              - { label: "Foto", name: "imagen", widget: "image", hint: "Sube tu foto o pega una URL" }
+              - { label: "Título / descripción", name: "titulo", widget: "string" }
+              - label: "Categoría"
+                name: "categoria"
+                widget: "select"
+                options: ["Cortes", "Barba", "Color"]
+                default: "Cortes"
+
+  # ----------------------------------------------------------
+  # 6. TESTIMONIOS
+  # ----------------------------------------------------------
+  - name: "testimonios"
+    label: "⭐ Testimonios"
+    delete: false
+    editor:
+      preview: false
+    files:
+      - name: "testimonios"
+        label: "Opiniones de clientes"
+        file: "content/testimonios.json"
+        fields:
+          - label: "Resumen de valoración"
+            name: "resumen"
+            widget: "object"
+            fields:
+              - { label: "Valoración media", name: "valoracion", widget: "string" }
+              - { label: "Número de reseñas", name: "num_resenas", widget: "string" }
+              - { label: "Texto resumen", name: "texto", widget: "text" }
+          - label: "Opiniones"
+            name: "opiniones"
+            widget: "list"
+            label_singular: "Opinión"
+            summary: "{{fields.nombre}} — {{fields.estrellas}}★"
+            fields:
+              - { label: "Nombre", name: "nombre", widget: "string" }
+              - { label: "Zona / localidad", name: "zona", widget: "string", required: false }
+              - { label: "Estrellas", name: "estrellas", widget: "number", default: 5, min: 1, max: 5, value_type: "int" }
+              - { label: "Texto de la opinión", name: "texto", widget: "text" }

@@ -1,0 +1,37 @@
+{
+  "servicios": [
+    {
+      "icono": "razor",
+      "titulo": "Barbería de Especialistas",
+      "descripcion": "Cinco barberos especializados para que elijas al tuyo. Degradados y fades de precisión, cortes clásicos y arreglo de barba a navaja con toalla caliente.",
+      "detalles": [
+        "Degradado / Fade a tu medida",
+        "Corte clásico y a tijera",
+        "Arreglo y perfilado de barba a navaja",
+        "Corte infantil"
+      ]
+    },
+    {
+      "icono": "sparkles",
+      "titulo": "Peluquería de Señora",
+      "descripcion": "Corte, color y estilismo para ella. Mechas, balayage, tratamientos y peinados con el asesoramiento de nuestro equipo.",
+      "detalles": [
+        "Corte y peinado de señora",
+        "Color, tinte y mechas / balayage",
+        "Tratamientos e hidratación",
+        "Recogidos para eventos"
+      ]
+    },
+    {
+      "icono": "scissors",
+      "titulo": "Manicura y Estética",
+      "descripcion": "Manicurista profesional en el equipo. Manos y pies cuidados con productos de calidad para rematar tu look al detalle.",
+      "detalles": [
+        "Manicura profesional",
+        "Pedicura",
+        "Esmaltado semipermanente",
+        "Cuidado de cutículas"
+      ]
+    }
+  ]
+}

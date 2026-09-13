@@ -1,0 +1,12 @@
+{
+  "aviso": "Horario de EJEMPLO — confírmalo y ajústalo al real desde el panel. Reserva tu cita fácilmente en Booksy.",
+  "dias": [
+    { "dia": "Lunes", "horas": "10:00 – 20:00", "cerrado": false },
+    { "dia": "Martes", "horas": "10:00 – 20:00", "cerrado": false },
+    { "dia": "Miércoles", "horas": "10:00 – 20:00", "cerrado": false },
+    { "dia": "Jueves", "horas": "10:00 – 20:00", "cerrado": false },
+    { "dia": "Viernes", "horas": "10:00 – 20:30", "cerrado": false },
+    { "dia": "Sábado", "horas": "10:00 – 20:30", "cerrado": false },
+    { "dia": "Domingo", "horas": "10:00 – 14:00", "cerrado": false }
+  ]
+}

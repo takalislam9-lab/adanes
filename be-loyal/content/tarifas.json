@@ -1,0 +1,19 @@
+{
+  "nota": "Precios orientativos de ejemplo — el negocio los ajusta a su carta real desde el panel. Consulta y reserva en Booksy.",
+  "barberia": [
+    { "nombre": "Corte de caballero", "descripcion": "Corte a máquina y/o tijera con acabado.", "precio": "13 €", "destacado": false },
+    { "nombre": "Corte + Barba", "descripcion": "Corte completo con arreglo y perfilado de barba.", "precio": "19 €", "destacado": true },
+    { "nombre": "Degradado / Fade", "descripcion": "Degradado de precisión a tu gusto.", "precio": "14 €", "destacado": false },
+    { "nombre": "Arreglo de barba a navaja", "descripcion": "Perfilado con navaja y toalla caliente.", "precio": "9 €", "destacado": false },
+    { "nombre": "Corte infantil", "descripcion": "Corte adaptado a los más pequeños.", "precio": "11 €", "destacado": false },
+    { "nombre": "Rapado con máquina", "descripcion": "Un solo número al gusto.", "precio": "9 €", "destacado": false }
+  ],
+  "peluqueria": [
+    { "nombre": "Corte de señora", "descripcion": "Lavado, corte y peinado.", "precio": "16 €", "destacado": false },
+    { "nombre": "Peinado / Recogido", "descripcion": "Peinado para el día a día o eventos.", "precio": "desde 18 €", "destacado": false },
+    { "nombre": "Tinte / Color", "descripcion": "Coloración con acabado (según largo).", "precio": "desde 28 €", "destacado": true },
+    { "nombre": "Mechas / Balayage", "descripcion": "Técnica de color a medida (según largo).", "precio": "desde 45 €", "destacado": false },
+    { "nombre": "Manicura", "descripcion": "Manicura profesional completa.", "precio": "desde 12 €", "destacado": false },
+    { "nombre": "Esmaltado semipermanente", "descripcion": "Color duradero y brillante.", "precio": "desde 15 €", "destacado": false }
+  ]
+}

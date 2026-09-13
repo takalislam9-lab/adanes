@@ -1,0 +1,13 @@
+{
+  "resumen": {
+    "valoracion": "5.0",
+    "num_resenas": "",
+    "texto": "Opiniones de EJEMPLO para la maqueta. Sustitúyelas por las reseñas reales de tus clientes de Google y Booksy desde el panel de gestión."
+  },
+  "opiniones": [
+    { "nombre": "Carlos", "zona": "Alcobendas", "estrellas": 5, "texto": "Barberos que saben lo que hacen. Pides tu especialista por Booksy y siempre sales con el corte perfecto." },
+    { "nombre": "Adrián", "zona": "San Sebastián de los Reyes", "estrellas": 5, "texto": "El arreglo de barba a navaja es de otro nivel. Trato cercano y buen ambiente cada vez que voy." },
+    { "nombre": "Nuria", "zona": "Alcobendas", "estrellas": 5, "texto": "Me hago el color y la manicura en la misma visita. Muy cómodo y con un resultado impecable." },
+    { "nombre": "Iván", "zona": "La Moraleja", "estrellas": 4, "texto": "Fácil reservar online, puntuales y sin esperas. El degradado quedó exactamente como lo pedí." }
+  ]
+}
